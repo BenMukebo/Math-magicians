@@ -13,6 +13,8 @@ $border: 1px solid $primary-color;
 }
 
 %btn-properties {
+  width: 25%;
+  height: 60px;
   color: $text-color;
   font-weight: bolder;
   padding: 1rem 1rem;

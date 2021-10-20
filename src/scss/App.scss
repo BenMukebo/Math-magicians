@@ -6,12 +6,6 @@ body {
   background-color: #f9f9f9;
 }
 
-input,
-button {
-  border: none;
-  outline: none;
-}
-
 .flex-center {
   display: flex;
   justify-content: center;
@@ -26,7 +20,6 @@ main {
   max-width: 500px;
   width: 80%;
   border: 1px solid $text-color;
-  // box-shadow: 2px 2px 5px 3px #000;
 
   ul {
     list-style: none;
@@ -40,8 +33,10 @@ main {
       width: 100%;
       flex: 1;
       padding: 1.2rem 1rem;
-      background-color: #bbb;
+      border: none;
+      outline: none;
       font-size: 1.5rem;
+      background-color: #bbb;
       color: #fff;
       text-align: end;
 
@@ -51,12 +46,7 @@ main {
     }
 
     button {
-      // flex: 1;   
-
       @extend %btn-properties;
-
-      width: 25%;
-      height: 60px;
 
       &:last-child {
         background-color: $secondary-color;
