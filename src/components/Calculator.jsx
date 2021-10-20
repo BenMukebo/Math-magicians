@@ -14,7 +14,7 @@ class Calculator extends Component {
         </li>
         <li className="flex-center keyItem">
           <button className="btn" type="button">AC</button>
-          <button className="btn" type="button">-/+</button>
+          <button className="btn" type="button">+/-</button>
           <button className="btn" type="button">&#x25;</button>
           <button className="btn" type="button">&#xf7;</button>
         </li>
