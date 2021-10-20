@@ -1,0 +1,25 @@
+$text-color: #272727;
+$primary-color: #fff;
+$secondary-color: orange;
+$background-color: rgba(221, 219, 219, 0.952);
+$font-stack: 'Montserrat', serif;
+$border: 3px solid $primary-color;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack;
+}
+
+%btn-properties {
+  width: 25%;
+  height: 60px;
+  color: $text-color;
+  font-weight: bolder;
+  padding: 1rem 1rem;
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
+  border: $border;
+}

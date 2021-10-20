@@ -1,0 +1,69 @@
+@import 'config';
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  width: 80%;
+  border: 1px solid $text-color;
+
+  ul {
+    list-style: none;
+    width: 100%;
+  }
+
+  li {
+    width: 100%;
+
+    input {
+      width: 100%;
+      flex: 1;
+      padding: 1.2rem 1rem;
+      border: none;
+      outline: none;
+      font-size: 1.5rem;
+      background-color: #bbb;
+      color: #fff;
+      text-align: end;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    button {
+      @extend %btn-properties;
+
+      &:last-child {
+        background-color: $secondary-color;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(185, 185, 185, 0.658);
+        transition: all 0.4s ease-in-out;
+      }
+    }
+
+    &:last-child button:first-child {
+      // flex-grow: 2;
+      width: 50%;
+    }
+  }
+}
+
+@import 'responsive';
