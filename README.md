@@ -3,6 +3,17 @@
 
 ## Math magicians
 
+### Learning objectives
+
+- Set up a React app.
+- Use React documentation.
+- Use React components.
+- Use React props.
+- Use React state.
+- Handle events in a React app.
+- Use React life cycle methods.
+- Understand the mechanism of lifting state up.
+
 ### Built With
 
 Runs the app in the development mode.\
