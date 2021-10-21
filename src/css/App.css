@@ -38,20 +38,17 @@ main {
   width: 80%;
   border: 1px solid #272727;
 }
-
 main ul {
   list-style: none;
   width: 100%;
 }
-
 main li {
   width: 100%;
 }
-
-main li input {
+main li .input {
   width: 100%;
   flex: 1;
-  padding: 1.2rem 1rem;
+  padding: 1.2rem;
   border: none;
   outline: none;
   font-size: 1.5rem;
@@ -59,21 +56,17 @@ main li input {
   color: #fff;
   text-align: end;
 }
-
-main li input:hover {
+main li .input:hover {
   cursor: pointer;
 }
-
 main li button:last-child {
   background-color: orange;
 }
-
 main li button:hover {
   cursor: pointer;
   background-color: rgba(185, 185, 185, 0.658);
   transition: all 0.4s ease-in-out;
 }
-
 main li:last-child button:first-child {
   width: 50%;
 }
@@ -83,3 +76,5 @@ main li:last-child button:first-child {
     height: 70px;
   }
 }
+
+/*# sourceMappingURL=App.css.map */
