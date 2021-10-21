@@ -19,7 +19,11 @@ class Calculator extends Component {
       <ul className="items-container">
         <li className="flex-center result">
           <div className='input'>
-        
+          {`
+          ${total || operation ||  next
+           ? `${total || ''} ${operation || ''} ${next || ''}`
+           : '0' }
+            `} 
           </div>
         </li>
         <li className="flex-center keyItem">
