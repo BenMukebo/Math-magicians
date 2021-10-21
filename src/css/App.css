@@ -48,10 +48,10 @@ main li {
   width: 100%;
 }
 
-main li input {
+main li .input {
   width: 100%;
   flex: 1;
-  padding: 1.2rem 1rem;
+  padding: 1.2rem;
   border: none;
   outline: none;
   font-size: 1.5rem;
@@ -60,7 +60,7 @@ main li input {
   text-align: end;
 }
 
-main li input:hover {
+main li .input:hover {
   cursor: pointer;
 }
 
