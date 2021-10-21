@@ -11,7 +11,10 @@ class Calculator extends Component {
     };
   }
 
- 
+  handleCalculate = (value) => {
+    // return this.setState (calculate(this.state, value.target.textContent));  
+    return this.setState((obj) => calculate(obj, value.target.textContent));
+  }
 
   render() {
     const {total, next, operation} = this.state;
