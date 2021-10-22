@@ -21,6 +21,22 @@ main {
   width: 80%;
   border: 1px solid $text-color;
 
+  .input {
+    width: 100%;
+    flex: 1;
+    justify-content: flex-end;
+    padding: 1.2rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    background-color: #bbb;
+    color: #fff;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   ul {
     list-style: none;
     width: 100%;
@@ -28,22 +44,6 @@ main {
 
   li {
     width: 100%;
-
-    .input {
-      width: 100%;
-      flex: 1;
-      padding: 1.2rem;
-      border: none;
-      outline: none;
-      font-size: 1.5rem;
-      background-color: #bbb;
-      color: #fff;
-      text-align: end;
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
 
     button {
       @extend %btn-properties;
