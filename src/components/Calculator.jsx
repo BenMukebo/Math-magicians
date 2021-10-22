@@ -3,7 +3,11 @@ import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
-
+  const [state, setState] = useState({
+      total: 0,
+      next: '',
+      operation: '',
+  });
 
   handleCalculate = (value) => this.setState((obj) => calculate(obj, value.target.textContent))
 
