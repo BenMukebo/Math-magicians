@@ -1,62 +1,64 @@
-
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
   const [state, setState] = useState({
-      total: 0,
-      next: '',
-      operation: '',
+    total: 0,
+    next: '',
+    operation: '',
   });
 
-  handleCalculate = (value) => this.setState((obj) => calculate(obj, value.target.textContent))
+  //  handleKeyPress = (event) => this.setState((obj) => calculate(obj, event.target.textContent));
+  const handleKeyPress = (event) => {
+    const calculator = calculate(state, event.target.textContent);
+    setState({ ...state, ...calculator });
+  };
 
+  // const { total, next, operation } = state;
 
-
-  const { total, next, operation } = this.state;
   return (
     <section className="items-container">
       <div className="flex-center result">
         <div className="input">
           {`
-        ${total || operation || next
-            ? `${total || ''} ${operation || ''} ${next || ''}`
+        ${state.total || state.operation || state.next
+            ? `${state.total || ''} ${state.operation || ''} ${state.next || ''}`
             : '0'}
           `}
         </div>
       </div>
       <ul className="items-container">
         <li className="flex-center keyItem">
-          <button className="btn" onClick={this.handleCalculate} type="button">AC</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">+/-</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">&#x25;</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">&#xf7;</button>
+          <button className="btn" onClick={handleKeyPress} type="button">AC</button>
+          <button className="btn" onClick={handleKeyPress} type="button">+/-</button>
+          <button className="btn" onClick={handleKeyPress} type="button">&#x25;</button>
+          <button className="btn" onClick={handleKeyPress} type="button">&#xf7;</button>
         </li>
         <li className="flex-center keyItem">
-          <button className="btn" onClick={this.handleCalculate} type="button">7</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">8</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">9</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">x</button>
+          <button className="btn" onClick={handleKeyPress} type="button">7</button>
+          <button className="btn" onClick={handleKeyPress} type="button">8</button>
+          <button className="btn" onClick={handleKeyPress} type="button">9</button>
+          <button className="btn" onClick={handleKeyPress} type="button">x</button>
         </li>
         <li className="flex-center keyItem">
-          <button className="btn" onClick={this.handleCalculate} type="button">4</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">5</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">6</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">-</button>
+          <button className="btn" onClick={handleKeyPress} type="button">4</button>
+          <button className="btn" onClick={handleKeyPress} type="button">5</button>
+          <button className="btn" onClick={handleKeyPress} type="button">6</button>
+          <button className="btn" onClick={handleKeyPress} type="button">-</button>
         </li>
         <li className="flex-center keyItem">
-          <button className="btn" onClick={this.handleCalculate} type="button">1</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">2</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">3</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">+</button>
+          <button className="btn" onClick={handleKeyPress} type="button">1</button>
+          <button className="btn" onClick={handleKeyPress} type="button">2</button>
+          <button className="btn" onClick={handleKeyPress} type="button">3</button>
+          <button className="btn" onClick={handleKeyPress} type="button">+</button>
         </li>
         <li className="flex-center keyItem">
-          <button className="btn" onClick={this.handleCalculate} type="button">0</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">.</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">=</button>
+          <button className="btn" onClick={handleKeyPress} type="button">0</button>
+          <button className="btn" onClick={handleKeyPress} type="button">.</button>
+          <button className="btn" onClick={handleKeyPress} type="button">=</button>
         </li>
       </ul>
     </section>
   );
-}
+};
 export default Calculator;
