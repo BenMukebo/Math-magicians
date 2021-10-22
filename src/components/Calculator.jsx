@@ -22,8 +22,6 @@ const Calculator = () => {
     setState({ ...state, ...calculator });
   };
 
-  // const { total, next, operation } = state;
-
   return (
     <section className="items-container">
       <div className="flex-center result">
@@ -50,35 +48,6 @@ const Calculator = () => {
             ))}
           </li>
         ))}
-        {/* <li className="flex-center keyItem">
-          <button className="btn" onClick={handleKeyPress} type="button">AC</button>
-          <button className="btn" onClick={handleKeyPress} type="button">+/-</button>
-          <button className="btn" onClick={handleKeyPress} type="button">&#x25;</button>
-          <button className="btn" onClick={handleKeyPress} type="button">&#xf7;</button>
-        </li>
-        <li className="flex-center keyItem">
-          <button className="btn" onClick={handleKeyPress} type="button">7</button>
-          <button className="btn" onClick={handleKeyPress} type="button">8</button>
-          <button className="btn" onClick={handleKeyPress} type="button">9</button>
-          <button className="btn" onClick={handleKeyPress} type="button">x</button>
-        </li>
-        <li className="flex-center keyItem">
-          <button className="btn" onClick={handleKeyPress} type="button">4</button>
-          <button className="btn" onClick={handleKeyPress} type="button">5</button>
-          <button className="btn" onClick={handleKeyPress} type="button">6</button>
-          <button className="btn" onClick={handleKeyPress} type="button">-</button>
-        </li>
-        <li className="flex-center keyItem">
-          <button className="btn" onClick={handleKeyPress} type="button">1</button>
-          <button className="btn" onClick={handleKeyPress} type="button">2</button>
-          <button className="btn" onClick={handleKeyPress} type="button">3</button>
-          <button className="btn" onClick={handleKeyPress} type="button">+</button>
-        </li>
-        <li className="flex-center keyItem">
-          <button className="btn" onClick={handleKeyPress} type="button">0</button>
-          <button className="btn" onClick={handleKeyPress} type="button">.</button>
-          <button className="btn" onClick={handleKeyPress} type="button">=</button>
-        </li> */}
       </ul>
     </section>
   );
