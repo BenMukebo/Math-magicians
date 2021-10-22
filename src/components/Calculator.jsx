@@ -1,15 +1,9 @@
-import React, { Component } from 'react';
+
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: 0,
-      next: '',
-      operation: '',
-    };
-  }
+const Calculator = () => {
+
 
   handleCalculate = (value) => this.setState((obj) => calculate(obj, value.target.textContent))
 
@@ -17,8 +11,8 @@ class Calculator extends Component {
     const { total, next, operation } = this.state;
     return (
       <section className="items-container">
-        <div className="result">
-          <div className=" flex-center input">
+        <div className="flex-center result">
+          <div className="input">
             {`
           ${total || operation || next
               ? `${total || ''} ${operation || ''} ${next || ''}`
@@ -62,34 +56,3 @@ class Calculator extends Component {
   }
 }
 export default Calculator;
-
-// const calculatorData = [
-//   [
-//     { className: 'btn', name: '+/-' },
-//     { className: 'btn', name: '%' },
-//     { className: 'btn', name: '÷' },
-//   ],
-//   [
-//     { className: 'btn', name: '7' },
-//     { className: 'btn', name: '8' },
-//     { className: 'btn', name: '9' },
-//     { className: 'btn', name: 'x' },
-//   ],
-//   [
-//     { className: 'btn', name: '4' },
-//     { className: 'btn', name: '5' },
-//     { className: 'btn', name: '6' },
-//     { className: 'btn', name: '-' },
-//   ],
-//   [
-//     { className: 'btn', name: '1' },
-//     { className: 'btn', name: '2' },
-//     { className: 'btn', name: '3' },
-//     { className: 'btn', name: '+' },
-//   ],
-//   [
-//     { className: 'btn', name: '0' },
-//     { className: 'btn', name: '.' },
-//     { className: 'btn', name: '=' },
-//   ],
-// ];

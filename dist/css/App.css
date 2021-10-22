@@ -49,6 +49,7 @@ main .input {
   font-size: 1.5rem;
   background-color: #bbb;
   color: #fff;
+  text-align: end;
 }
 
 main .input:hover {
