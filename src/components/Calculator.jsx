@@ -8,6 +8,14 @@ const Calculator = () => {
     operation: '',
   });
 
+  const keyBtns = [
+    ['AC', '+/-', '%', '÷'],
+    ['7', '8', '9', 'x'],
+    ['4', '5', '6', '-'],
+    ['1', '2', '3', '+'],
+    ['0', '.', '='],
+  ];
+
   //  handleKeyPress = (event) => this.setState((obj) => calculate(obj, event.target.textContent));
   const handleKeyPress = (event) => {
     const calculator = calculate(state, event.target.textContent);
@@ -28,7 +36,21 @@ const Calculator = () => {
         </div>
       </div>
       <ul className="items-container">
-        <li className="flex-center keyItem">
+        {keyBtns.map((keys) => (
+          <li className="flex-center keyItem" key={keys}>
+            {keys.map((key) => (
+              <button
+                className="btn"
+                type="button"
+                onClick={handleKeyPress}
+                key={key}
+              >
+                {key}
+              </button>
+            ))}
+          </li>
+        ))}
+        {/* <li className="flex-center keyItem">
           <button className="btn" onClick={handleKeyPress} type="button">AC</button>
           <button className="btn" onClick={handleKeyPress} type="button">+/-</button>
           <button className="btn" onClick={handleKeyPress} type="button">&#x25;</button>
@@ -56,7 +78,7 @@ const Calculator = () => {
           <button className="btn" onClick={handleKeyPress} type="button">0</button>
           <button className="btn" onClick={handleKeyPress} type="button">.</button>
           <button className="btn" onClick={handleKeyPress} type="button">=</button>
-        </li>
+        </li> */}
       </ul>
     </section>
   );
