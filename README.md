@@ -1,9 +1,20 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Math magicians
+# Math magicians
 
-### Learning objectives
+## Description
+- "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
+  - Make simple calculations.
+  - Read a random math-related quote.
+  
+
+||             Math magicians         ||
+|-|-----------------------------------|-|
+||![screenshot](./src/img/screenshot.png)||
+
+
+## Learning objectives
 
 - Set up a React app.
 - Use React documentation.
@@ -13,6 +24,7 @@
 - Handle events in a React app.
 - Use React life cycle methods.
 - Understand the mechanism of lifting state up.
+- Use React hooks.
 
 ### Built With
 
