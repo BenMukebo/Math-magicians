@@ -23,33 +23,36 @@ const Calculator = () => {
   };
 
   return (
-    <section className="items-container">
-      <div className="flex-center result">
-        <div className="input">
-          {`
-        ${state.total || state.operation || state.next
-            ? `${state.total || ''} ${state.operation || ''} ${state.next || ''}`
-            : '0'}
-          `}
+    <>
+      {/* <h2>Let's do some math!</h2> */}
+      <section className="items-container">
+        <div className="flex-center result">
+          <div className="input">
+            {`
+          ${state.total || state.operation || state.next
+              ? `${state.total || ''} ${state.operation || ''} ${state.next || ''}`
+              : '0'}
+            `}
+          </div>
         </div>
-      </div>
-      <ul className="items-container">
-        {keyBtns.map((keys) => (
-          <li className="flex-center keyItem" key={keys}>
-            {keys.map((key) => (
-              <button
-                className="btn"
-                type="button"
-                onClick={handleKeyPress}
-                key={key}
-              >
-                {key}
-              </button>
-            ))}
-          </li>
-        ))}
-      </ul>
-    </section>
+        <ul className="items-container">
+          {keyBtns.map((keys) => (
+            <li className="flex-center keyItem" key={keys}>
+              {keys.map((key) => (
+                <button
+                  className="btn"
+                  type="button"
+                  onClick={handleKeyPress}
+                  key={key}
+                >
+                  {key}
+                </button>
+              ))}
+            </li>
+          ))}
+        </ul>
+      </section>
+    </>
   );
 };
 export default Calculator;

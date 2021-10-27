@@ -53,6 +53,12 @@ li .nav-item-link {
   text-decoration: none;
 }
 
+.quote-section p, .home-section p {
+  font-size: 1rem;
+  padding: 1rem 1.2rem;
+  line-height: 1.4;
+}
+
 .home-section {
   width: 100%;
   height: 100vh;
@@ -66,12 +72,9 @@ li .nav-item-link {
 .home-section h2 span {
   color: orange;
 }
-.home-section p {
-  font-size: 1rem;
-  padding: 1rem 1.2rem;
-  line-height: 1.4;
+.quote-section {
+  padding: 4rem 2rem;
 }
-
 body {
   width: 100%;
   height: 100%;
