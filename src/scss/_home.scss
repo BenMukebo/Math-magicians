@@ -1,11 +1,24 @@
 .home-section {
-//   height: 100vh;
-  padding: 1rem;
+  width: 100%;
+  height: 100vh;
+//   background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 
   h2 {
-    font-size: 2rem;
-    width: 90%;
-    max-width: 600px;
+    font-size: 2.2rem;
+    padding: 1.6rem 1.2rem 0.7rem;
+
+    span {
+      color: $secondary-color;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
+    line-height: 1.4;
+    // color: $primary-color;
   }
 
 }
