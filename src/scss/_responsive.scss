@@ -7,3 +7,28 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  main {
+    li {
+      .btn {
+        height: 70px;
+      }
+    }
+  }
+
+  .header-title {
+
+    h1 {
+      font-size: 2.7rem;
+    }
+  }
+  
+  li{  
+    .nav-item-link {
+      font-size: 1.3rem;  
+    }
+  }
+  
+
+}

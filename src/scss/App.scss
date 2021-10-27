@@ -5,6 +5,9 @@ body {
   width: 100%;
   height: 100%;
   background-color: #f9f9f9;
+  text-align: center;
+  // overflow-x: hidden;
+  // background-color: red;
 }
 
 .flex-center {
@@ -15,7 +18,6 @@ body {
 
 main {
   width: 100%;
-  padding: 1rem;
 
   .items-container {
     // position: absolute;

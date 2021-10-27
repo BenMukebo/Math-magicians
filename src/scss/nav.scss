@@ -2,17 +2,21 @@ header {
   background-color: black;
   width: 100%;
   border-bottom: 5px solid $secondary-color;
-
+  
   .navbar {
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
   }
 }
 
 .header-title {
+  width: 100%;
+  max-width: 320px;
+
   h1 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     color: $primary-color;
     line-height: 80px;
 
@@ -27,7 +31,7 @@ li{
   line-height: 80px;
 
   .nav-item-link {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: $primary-color;
     text-decoration: none;
   }

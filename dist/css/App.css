@@ -3,9 +3,10 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", serif;
+  overflow: hidden;
 }
 
-main li button {
+main .items-container li button {
   width: 25%;
   height: 60px;
   color: #272727;
@@ -14,13 +15,62 @@ main li button {
   font-size: 1.3rem;
   outline: none;
   border: none;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
+}
+
+header {
+  background-color: black;
+  width: 100%;
+  border-bottom: 5px solid orange;
+}
+
+header .navbar {
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.header-title {
+  width: 100%;
+  max-width: 320px;
+}
+
+.header-title h1 {
+  font-size: 2.4rem;
+  color: #fff;
+  line-height: 80px;
+}
+
+.header-title h1 span {
+  color: orange;
+}
+
+li {
+  padding: 0 0.5rem;
+  line-height: 80px;
+}
+
+li .nav-item-link {
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.home-section {
+  padding: 1rem;
+}
+
+.home-section h2 {
+  font-size: 2rem;
+  width: 90%;
+  max-width: 600px;
 }
 
 body {
   width: 100%;
   height: 100%;
   background-color: #f9f9f9;
+  text-align: center;
 }
 
 .flex-center {
@@ -30,16 +80,16 @@ body {
 }
 
 main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+main .items-container {
   max-width: 500px;
   width: 80%;
   border: 1px solid #272727;
 }
 
-main .input {
+main .items-container .input {
   width: 100%;
   flex: 1;
   justify-content: flex-end;
@@ -52,36 +102,51 @@ main .input {
   text-align: end;
 }
 
-main .input:hover {
+main .items-container .input:hover {
   cursor: pointer;
 }
 
-main ul {
+main .items-container ul {
   list-style: none;
-  width: 100%;
+  min-width: 100%;
+  border: none;
+  outline: none;
 }
 
-main li {
+main .items-container li {
   width: 100%;
+  flex: 1;
 }
 
-main li button:last-child {
+main .items-container li button:last-child {
   background-color: orange;
 }
 
-main li button:hover {
+main .items-container li button:hover {
   cursor: pointer;
   background-color: rgba(185, 185, 185, 0.658);
   transition: all 0.4s ease-in-out;
 }
 
-main li:last-child button:first-child {
+main .items-container li:last-child button:first-child {
   width: 50%;
 }
 
 @media screen and (min-width: 540px) {
   main li .btn {
     height: 70px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main li .btn {
+    height: 70px;
+  }
+  .header-title h1 {
+    font-size: 2.7rem;
+  }
+  li .nav-item-link {
+    font-size: 1.3rem;
   }
 }
 /*# sourceMappingURL=App.css.map */
