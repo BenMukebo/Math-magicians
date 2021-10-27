@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Home = () => (
-  <section className="p-5">
+  <section className="">
     <h2>Welcome to our page</h2>
     <p className="">
       Calculators have not only greatly enhanced our ability to perform the regular
