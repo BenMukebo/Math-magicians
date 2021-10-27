@@ -12,10 +12,10 @@ const App = () => (
     <main className="container">
       <Switch>
         <Route exact path="/">
-          <Calculator />
-        </Route>
-        <Route path="/Home">
           <Home />
+        </Route>
+        <Route path="/Calculator">
+          <Calculator />
         </Route>
         <Route path="/Quote">
           <Quote />

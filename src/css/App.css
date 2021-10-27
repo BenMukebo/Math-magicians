@@ -5,7 +5,7 @@
   font-family: "Montserrat", serif;
 }
 
-main li button {
+main .items-container li button {
   width: 25%;
   height: 60px;
   color: #272727;
@@ -14,7 +14,7 @@ main li button {
   font-size: 1.3rem;
   outline: none;
   border: none;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
 }
 
 body {
@@ -30,16 +30,15 @@ body {
 }
 
 main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 1rem;
+}
+main .items-container {
   max-width: 500px;
   width: 80%;
   border: 1px solid #272727;
 }
-
-main .input {
+main .items-container .input {
   width: 100%;
   flex: 1;
   justify-content: flex-end;
@@ -51,31 +50,28 @@ main .input {
   color: #fff;
   text-align: end;
 }
-
-main .input:hover {
+main .items-container .input:hover {
   cursor: pointer;
 }
-
-main ul {
+main .items-container ul {
   list-style: none;
-  width: 100%;
+  min-width: 100%;
+  border: none;
+  outline: none;
 }
-
-main li {
+main .items-container li {
   width: 100%;
+  flex: 1;
 }
-
-main li button:last-child {
+main .items-container li button:last-child {
   background-color: orange;
 }
-
-main li button:hover {
+main .items-container li button:hover {
   cursor: pointer;
   background-color: rgba(185, 185, 185, 0.658);
   transition: all 0.4s ease-in-out;
 }
-
-main li:last-child button:first-child {
+main .items-container li:last-child button:first-child {
   width: 50%;
 }
 
@@ -84,3 +80,5 @@ main li:last-child button:first-child {
     height: 70px;
   }
 }
+
+/*# sourceMappingURL=App.css.map */
