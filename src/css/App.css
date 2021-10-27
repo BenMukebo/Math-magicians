@@ -17,6 +17,36 @@ main .items-container li button {
   border: 2px solid #fff;
 }
 
+header {
+  background-color: black;
+  width: 100%;
+  border-bottom: 5px solid orange;
+}
+header .navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.header-title h1 {
+  font-size: 3rem;
+  color: #fff;
+  line-height: 80px;
+}
+.header-title h1 span {
+  color: orange;
+}
+
+li {
+  padding: 0 0.5rem;
+  line-height: 80px;
+}
+li .nav-item-link {
+  font-size: 1.4rem;
+  color: #fff;
+  text-decoration: none;
+}
+
 body {
   width: 100%;
   height: 100%;
