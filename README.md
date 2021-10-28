@@ -9,10 +9,14 @@
   - Read a random math-related quote.
   
 
-||             Math magicians         ||
+||             Math magicians  Home Page       ||
 |-|-----------------------------------|-|
-||![screenshot](./src/img/screenshot.png)||
+||![screenshot](./src/img/screenshot1.png)||
 
+
+||      Calculator       ||        Quote        ||
+|-|----------------------|-| ----------------------|-|
+||![screenshot](./src/img/screenshot2.png)||![screenshot](./src/img/screenshot3.png)||
 
 ## Learning objectives
 
@@ -25,6 +29,8 @@
 - Use React life cycle methods.
 - Understand the mechanism of lifting state up.
 - Use React hooks.
+- Use React Router.
+- Use styles in a React app.
 
 ### Built With
 
@@ -43,17 +49,30 @@ You will also see any lint errors in the console.
 
 ## Getting Started
 
-### `npm run build`
-To get the content of this project locally you need to run this command in your terminal:
+### Clone this repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-- `git clone https://github.com/BenMukebo/Math-magicians.git`
-- `cd Math-magicians`
-- Use `npm start` to run the app in live server
+- To get the content of this project locally you need to run this command in your terminal:
+
+```bash
+$ git clone https://github.com/BenMukebo/Math-magicians.git
+$ cd Math-magicians
+```
+### Run project
+
+```bash
+$ npm install
+$ npm run start 
+```
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+### Set up React Router
+
+```bash
+$ npm install react-router-dom  # To use the Router component provided to wrap your components and associate them with a path.
+```
+
 ## Test
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
@@ -68,7 +87,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 - For tracking the linter errors in HTML file run:
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-  > `npx hint .`
+
 ### Code Splitting
 - For tracking the linter errors in CSS file run:
 
