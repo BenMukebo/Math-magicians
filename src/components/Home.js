@@ -5,7 +5,7 @@ const Home = () => (
     <h2>
       Welcome To The Best
       <span> Calculator </span>
-      Out There!
+      In The world!
     </h2>
     <div className="paragraph">
       <p>
@@ -15,8 +15,7 @@ const Home = () => (
       </p>
       <p>
         This technology allows students solve complicated problems quickly and in an efficient
-        manner. Calculations which were previously cumbersome and time-consuming can now be done
-        in minutes or even seconds, all at the push of a few buttons.
+        manner.
       </p>
     </div>
     <button type="button">Read More</button>

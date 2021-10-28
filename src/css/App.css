@@ -12,10 +12,10 @@ main .calculator-section li button {
   color: #272727;
   font-weight: bolder;
   padding: 1rem 1rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   outline: none;
   border: none;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
 }
 
 header {
@@ -43,11 +43,11 @@ header .navbar {
   color: orange;
 }
 
-li {
+.nav-item {
   padding: 0 0.5rem;
-  line-height: 80px;
+  margin-bottom: 1rem;
 }
-li .nav-item-link {
+.nav-item .nav-item-link {
   font-size: 1.2rem;
   color: #fff;
   text-decoration: none;
@@ -57,14 +57,12 @@ li .nav-item-link {
   font-size: 1rem;
   padding: 0.3rem 0;
   line-height: 1.4;
+  color: #272727;
 }
 
 .home-section {
   width: 100%;
   height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 1.2rem;
 }
 .home-section .paragraph {
   padding: 1rem 0;
@@ -82,11 +80,11 @@ li .nav-item-link {
 }
 
 .quote-section {
+  height: 100vh;
   padding: 4rem 2rem;
 }
 body {
   width: 100%;
-  height: 100%;
   background-color: #f9f9f9;
 }
 
@@ -98,6 +96,7 @@ body {
 
 h2 {
   font-size: 2.2rem;
+  color: #272727;
 }
 h2 span {
   color: orange;
@@ -105,6 +104,11 @@ h2 span {
 
 main {
   width: 100%;
+  height: auto;
+  background-image: linear-gradient(to top, rgba(133, 133, 252, 0.18), #7d7888), url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1.2rem;
 }
 main .section {
   height: 100vh;
@@ -137,14 +141,13 @@ main .calculator-section .input:hover {
 }
 main .calculator-section ul {
   list-style: none;
-  min-width: 100%;
+  width: 100%;
   border: none;
   outline: none;
+  background-color: red;
 }
 main .calculator-section li {
   width: 100%;
-  flex: 1;
-  background-color: aqua;
 }
 main .calculator-section li button:last-child {
   background-color: orange;
@@ -159,8 +162,22 @@ main .calculator-section li:last-child button:first-child {
 }
 
 @media screen and (min-width: 540px) {
+  .home-section .paragraph p, .quote-section p {
+    font-size: 1.2rem;
+  }
+
+  .nav-item {
+    padding: 0 0.5rem;
+    line-height: 80px;
+    margin-bottom: 0rem;
+  }
+
+  main .section h2 {
+    width: 40%;
+  }
   main .calculator-section {
     width: 50%;
+    margin-right: 2rem;
   }
   main li .btn {
     height: 70px;
@@ -177,6 +194,10 @@ main .calculator-section li:last-child button:first-child {
   }
 }
 @media screen and (min-width: 768px) {
+  .nav-item {
+    padding-left: 1.7rem;
+  }
+
   main li .btn {
     height: 70px;
   }

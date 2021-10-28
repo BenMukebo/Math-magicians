@@ -3,7 +3,7 @@ $primary-color: #fff;
 $secondary-color: orange;
 $background-color: rgba(221, 219, 219, 0.952);
 $font-stack: 'Montserrat', serif;
-$border: 2px solid $primary-color;
+$border: 3px solid $primary-color;
 
 * {
   box-sizing: border-box;
@@ -19,7 +19,7 @@ $border: 2px solid $primary-color;
   color: $text-color;
   font-weight: bolder;
   padding: 1rem 1rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   outline: none;
   border: none;
   border: $border;

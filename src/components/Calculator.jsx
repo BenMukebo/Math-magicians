@@ -26,7 +26,7 @@ const Calculator = () => {
     <div className=" section flex-center">
       <h2>
         Let&apos;s do some Math
-        <span>!</span>
+        <span> !</span>
       </h2>
       <section className="calculator-section">
         <div className="flex-center result">

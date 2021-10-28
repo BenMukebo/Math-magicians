@@ -3,11 +3,8 @@
 @import 'home';
 body {
   width: 100%;
-  height: 100%;
+  // height: 100%;
   background-color: #f9f9f9;
-  // text-align: center;
-  // overflow-x: hidden;
-  // background-color: red;
 }
 
 .flex-center {
@@ -18,6 +15,7 @@ body {
 
 h2 {
   font-size: 2.2rem;
+  color: $text-color;
 
   span {
     color: $secondary-color;
@@ -26,6 +24,11 @@ h2 {
 
 main {
   width: 100%;
+  height: auto;
+  background-image: linear-gradient(to top, rgba(133, 133, 252, 0.18), rgb(125, 120, 136)), url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1.2rem;
 
   .section {
     height: 100vh;
@@ -62,15 +65,15 @@ main {
   
     ul {
       list-style: none;
-      min-width: 100%;
+      width: 100%;
       border: none;
       outline: none;
+      background-color: red;
     }
     
     li {
       width: 100%;
-      flex: 1;
-      background-color: aqua;
+      // flex: 1;
       
       button {
         @extend %btn-properties;

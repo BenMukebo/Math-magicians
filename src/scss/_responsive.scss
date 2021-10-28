@@ -1,7 +1,21 @@
 @media screen and (min-width: 540px) {
+  %p {
+    font-size: 1.2rem;
+  }
+  .nav-item {
+    padding: 0 0.5rem;
+    line-height: 80px;
+    margin-bottom: 0rem;
+  }
   main {
+    .section {
+      h2 {
+        width: 40%;
+      }
+    }
     .calculator-section  {
       width: 50%;
+      margin-right: 2rem;
     }
     li {
       .btn {
@@ -23,6 +37,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .nav-item {
+    padding-left: 1.7rem;
+  }
   main {
     li {
       .btn {
@@ -35,7 +52,6 @@
     .navbar {
       justify-content: space-between;
       padding: 0 10%;
-  
     }
   }
   
