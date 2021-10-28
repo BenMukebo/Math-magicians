@@ -51,6 +51,10 @@ header .navbar {
   font-size: 1.2rem;
   color: #fff;
   text-decoration: none;
+  transition: all 0.5s ease;
+}
+.nav-item .nav-item-link:hover {
+  color: orange;
 }
 
 .quote-section p, .home-section .paragraph p {
@@ -77,10 +81,18 @@ header .navbar {
   float: right;
   margin-right: 3rem;
   font-size: 1.2rem;
+  transition: all 0.5s ease;
+}
+.home-section button:hover {
+  color: orange;
+  background-color: black;
 }
 
 .quote-section {
   height: 100vh;
+  width: 90%;
+  max-width: 992px;
+  margin: 0 auto;
   padding: 4rem 2rem;
 }
 body {
