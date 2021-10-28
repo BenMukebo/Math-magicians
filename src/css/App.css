@@ -3,23 +3,128 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", serif;
+  overflow: hidden;
 }
 
-main li button {
+main .calculator-section .keyItem button {
   width: 25%;
   height: 60px;
   color: #272727;
   font-weight: bolder;
   padding: 1rem 1rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   outline: none;
   border: none;
   border: 3px solid #fff;
 }
 
+section.quote-section p,
+section.home-section .paragraph p {
+  font-size: 1rem;
+  padding: 0.3rem 0;
+  line-height: 1.4;
+  color: #272727;
+}
+
+header {
+  background-color: black;
+  width: 100%;
+  border-bottom: 5px solid orange;
+}
+
+header .navbar {
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+header .header-title {
+  width: 100%;
+  max-width: 320px;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: #fff;
+  line-height: 80px;
+  text-align: center;
+}
+
+h1 span {
+  color: orange;
+}
+
+.nav-item {
+  padding: 0 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.nav-item .nav-item-link {
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.nav-item .nav-item-link:hover {
+  color: orange;
+}
+
+.second-title {
+  font-size: 2.2rem;
+  color: #272727;
+}
+
+.second-title span {
+  color: orange;
+}
+
+section.home-section {
+  width: 100%;
+  height: 100vh;
+}
+
+section.home-section .paragraph {
+  padding: 1rem 0;
+}
+
+section.home-section .btn-more {
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: orange;
+  padding: 8px 16px;
+  float: right;
+  margin-right: 3rem;
+  font-size: 1.2rem;
+  transition: all 0.5s ease;
+}
+
+section.home-section .btn-more:hover {
+  color: orange;
+  background-color: black;
+}
+
+section.quote-section {
+  height: 100vh;
+  width: 90%;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.h2 {
+  font-size: 2.2rem;
+  color: #272727;
+}
+
+.h2 span {
+  color: orange;
+}
+
 body {
   width: 100%;
-  height: 100%;
   background-color: #f9f9f9;
 }
 
@@ -30,27 +135,35 @@ body {
 }
 
 main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to top, rgba(133, 133, 252, 0.18), #7d7888), url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1.2rem;
+}
+
+main .section {
+  height: 100vh;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 3rem 1rem 0;
+}
+
+main .section h2 {
+  width: 30%;
+}
+
+main .calculator-section {
   max-width: 500px;
-  width: 80%;
+  width: 70%;
   border: 1px solid #272727;
 }
 
-main ul {
-  list-style: none;
-  width: 100%;
-}
-
-main li {
-  width: 100%;
-}
-
-main li .input {
+main .calculator-section .input {
   width: 100%;
   flex: 1;
+  justify-content: flex-end;
   padding: 1.2rem;
   border: none;
   outline: none;
@@ -60,26 +173,86 @@ main li .input {
   text-align: end;
 }
 
-main li .input:hover {
+main .calculator-section .input:hover {
   cursor: pointer;
 }
 
-main li button:last-child {
+main .calculator-section ul {
+  list-style: none;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+main .calculator-section .keyItem {
+  width: 100%;
+}
+
+main .calculator-section .keyItem button:last-child {
   background-color: orange;
 }
 
-main li button:hover {
+main .calculator-section .keyItem button:hover {
   cursor: pointer;
   background-color: rgba(185, 185, 185, 0.658);
   transition: all 0.4s ease-in-out;
 }
 
-main li:last-child button:first-child {
+main .calculator-section .keyItem:last-child button:first-child {
   width: 50%;
 }
 
 @media screen and (min-width: 540px) {
-  main li .btn {
+  .nav-item {
+    padding: 0 0.5rem;
+    line-height: 80px;
+    margin-bottom: 0;
+  }
+
+  main .section h2 {
+    width: 40%;
+  }
+
+  main .calculator-section {
+    width: 50%;
+    margin-right: 2rem;
+  }
+
+  main .keyItem .btn {
     height: 70px;
+  }
+
+  main .home-section {
+    width: 85%;
+    max-width: 992px;
+    margin: 0 auto;
+  }
+
+  main .home-section h2 {
+    font-size: 2.4rem;
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .navbar {
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+
+  header .nav-item {
+    padding-left: 1.7rem;
+  }
+
+  main .keyItem .btn {
+    height: 70px;
+  }
+
+  .header-title h1 {
+    font-size: 2.7rem;
+  }
+
+  li .nav-item-link {
+    font-size: 1.3rem;
   }
 }

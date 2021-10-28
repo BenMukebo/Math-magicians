@@ -1,65 +1,61 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { 
-      total: 0,
-      next: '',
-      operation: '',
-    };
-  }
+const Calculator = () => {
+  const [state, setState] = useState({
+    total: 0,
+    next: '',
+    operation: '',
+  });
 
-  handleCalculate = (value) => {
-    // return this.setState (calculate(this.state, value.target.textContent));  
-    return this.setState((obj) => calculate(obj, value.target.textContent));
-  }
+  const keyBtns = [
+    ['AC', '+/-', '%', '÷'],
+    ['7', '8', '9', 'x'],
+    ['4', '5', '6', '-'],
+    ['1', '2', '3', '+'],
+    ['0', '.', '='],
+  ];
 
-  render() {
-    const {total, next, operation} = this.state;
-    return (
-      <ul className="items-container">
-        <li className="flex-center result">
-          <div className='input'>
-          {`
-          ${total || operation ||  next
-           ? `${total || ''} ${operation || ''} ${next || ''}`
-           : '0' }
-            `} 
+  //  handleKeyPress = (event) => this.setState((obj) => calculate(obj, event.target.textContent));
+  const handleKeyPress = (event) => {
+    const calculator = calculate(state, event.target.textContent);
+    setState({ ...state, ...calculator });
+  };
+
+  return (
+    <div className=" section flex-center">
+      <h2 className="second-title">
+        Let&apos;s do some Math
+        <span> !</span>
+      </h2>
+      <section className="calculator-section">
+        <div className="flex-center result">
+          <div className="input">
+            {`
+          ${state.total || state.operation || state.next
+              ? `${state.total || ''} ${state.operation || ''} ${state.next || ''}`
+              : '0'}
+            `}
           </div>
-        </li>
-        <li className="flex-center keyItem">
-          <button className="btn" onClick={this.handleCalculate} type="button">AC</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">+/-</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">&#x25;</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">&#xf7;</button>
-        </li>
-        <li className="flex-center keyItem">
-          <button className="btn" onClick={this.handleCalculate} type="button">7</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">8</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">9</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">x</button>
-        </li>
-        <li className="flex-center keyItem">
-          <button className="btn" onClick={this.handleCalculate} type="button">4</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">5</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">6</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">-</button>
-        </li>
-        <li className="flex-center keyItem">
-          <button className="btn" onClick={this.handleCalculate} type="button">1</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">2</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">3</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">+</button>
-        </li>
-        <li className="flex-center keyItem">
-          <button className="btn" onClick={this.handleCalculate} type="button">0</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">.</button>
-          <button className="btn" onClick={this.handleCalculate} type="button">=</button>
-        </li>
-      </ul>
-    );
-  }
-}
+        </div>
+        <ul className="items-container">
+          {keyBtns.map((keys) => (
+            <li className="flex-center keyItem" key={keys}>
+              {keys.map((key) => (
+                <button
+                  className="btn"
+                  type="button"
+                  onClick={handleKeyPress}
+                  key={key}
+                >
+                  {key}
+                </button>
+              ))}
+            </li>
+          ))}
+        </ul>
+      </section>
+    </div>
+  );
+};
 export default Calculator;

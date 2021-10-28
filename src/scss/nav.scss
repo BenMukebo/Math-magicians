@@ -1,0 +1,43 @@
+header {
+  background-color: black;
+  width: 100%;
+  border-bottom: 5px solid $secondary-color;
+
+  .navbar {
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .header-title {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: $primary-color;
+  line-height: 80px;
+  text-align: center;
+
+  span {
+    color: $secondary-color;
+  }
+}
+
+.nav-item {
+  padding: 0 0.5rem;
+  margin-bottom: 1rem;
+
+  .nav-item-link {
+    font-size: 1.2rem;
+    color: $primary-color;
+    text-decoration: none;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}

@@ -1,8 +1,20 @@
 @import 'config';
+@import 'nav';
+@import 'home';
+@import 'quote';
+
+.h2 {
+  font-size: 2.2rem;
+  color: $text-color;
+
+  span {
+    color: $secondary-color;
+  }
+}
 
 body {
   width: 100%;
-  height: 100%;
+  // height: 100%;
   background-color: #f9f9f9;
 }
 
@@ -13,25 +25,33 @@ body {
 }
 
 main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 500px;
-  width: 80%;
-  border: 1px solid $text-color;
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to top, rgba(133, 133, 252, 0.18), rgb(125, 120, 136)), url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1.2rem;
 
-  ul {
-    list-style: none;
-    width: 100%;
+  .section {
+    height: 100vh;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 3rem 1rem 0;
+
+    h2 {
+      width: 30%;
+    }
   }
 
-  li {
-    width: 100%;
+  .calculator-section {
+    max-width: 500px;
+    width: 70%;
+    border: 1px solid $text-color;
 
     .input {
       width: 100%;
       flex: 1;
+      justify-content: flex-end;
       padding: 1.2rem;
       border: none;
       outline: none;
@@ -45,23 +65,35 @@ main {
       }
     }
 
-    button {
-      @extend %btn-properties;
-
-      &:last-child {
-        background-color: $secondary-color;
-      }
-
-      &:hover {
-        cursor: pointer;
-        background-color: rgba(185, 185, 185, 0.658);
-        transition: all 0.4s ease-in-out;
-      }
+    ul {
+      list-style: none;
+      width: 100%;
+      border: none;
+      outline: none;
     }
 
-    &:last-child button:first-child {
-      // flex-grow: 2;
-      width: 50%;
+    .keyItem {
+      width: 100%;
+      // flex: 1;
+
+      button {
+        @extend %btn-properties;
+
+        &:last-child {
+          background-color: $secondary-color;
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgba(185, 185, 185, 0.658);
+          transition: all 0.4s ease-in-out;
+        }
+      }
+
+      &:last-child button:first-child {
+        // flex-grow: 2;
+        width: 50%;
+      }
     }
   }
 }

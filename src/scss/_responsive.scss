@@ -1,9 +1,74 @@
 @media screen and (min-width: 540px) {
+  %p {
+    font-size: 1.2rem;
+  }
+
+  .nav-item {
+    padding: 0 0.5rem;
+    line-height: 80px;
+    margin-bottom: 0;
+  }
+
   main {
-    li {
+    .section {
+      h2 {
+        width: 40%;
+      }
+    }
+
+    .calculator-section {
+      width: 50%;
+      margin-right: 2rem;
+    }
+
+    .keyItem {
       .btn {
         height: 70px;
       }
+    }
+
+    .home-section {
+      width: 85%;
+      max-width: 992px;
+      margin: 0 auto;
+
+      h2 {
+        font-size: 2.4rem;
+        padding: 1rem 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    .navbar {
+      justify-content: space-between;
+      padding: 0 5%;
+    }
+
+    .nav-item {
+      padding-left: 1.7rem;
+    }
+  }
+
+  main {
+    .keyItem {
+      .btn {
+        height: 70px;
+      }
+    }
+  }
+
+  .header-title {
+    h1 {
+      font-size: 2.7rem;
+    }
+  }
+
+  li {
+    .nav-item-link {
+      font-size: 1.3rem;
     }
   }
 }
