@@ -16,13 +16,31 @@ body {
   align-items: center;
 }
 
+h2 {
+  font-size: 2.2rem;
+
+  span {
+    color: $secondary-color;
+  }
+}
+
 main {
   width: 100%;
 
-  .items-container {
-  
+  .section {
+    height: 100vh;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 3rem 1rem 0;
+
+    h2 {
+      width: 30%;
+    }
+  }
+
+  .calculator-section {
     max-width: 500px;
-    width: 80%;
+    width: 70%;
     border: 1px solid $text-color;
 
     .input {
@@ -48,11 +66,12 @@ main {
       border: none;
       outline: none;
     }
-
+    
     li {
       width: 100%;
       flex: 1;
-  
+      background-color: aqua;
+      
       button {
         @extend %btn-properties;
   

@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-main .items-container li button {
+main .calculator-section li button {
   width: 25%;
   height: 60px;
   color: #272727;
@@ -53,9 +53,9 @@ li .nav-item-link {
   text-decoration: none;
 }
 
-.quote-section p, .home-section p {
+.quote-section p, .home-section .paragraph p {
   font-size: 1rem;
-  padding: 1rem 1.2rem;
+  padding: 0.3rem 0;
   line-height: 1.4;
 }
 
@@ -64,14 +64,23 @@ li .nav-item-link {
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 1.2rem;
 }
-.home-section h2 {
-  font-size: 2.2rem;
-  padding: 1.6rem 1.2rem 0.7rem;
+.home-section .paragraph {
+  padding: 1rem 0;
 }
-.home-section h2 span {
-  color: orange;
+.home-section button {
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: orange;
+  padding: 8px 16px;
+  float: right;
+  margin-right: 3rem;
+  font-size: 1.2rem;
 }
+
 .quote-section {
   padding: 4rem 2rem;
 }
@@ -87,15 +96,31 @@ body {
   align-items: center;
 }
 
+h2 {
+  font-size: 2.2rem;
+}
+h2 span {
+  color: orange;
+}
+
 main {
   width: 100%;
 }
-main .items-container {
+main .section {
+  height: 100vh;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 3rem 1rem 0;
+}
+main .section h2 {
+  width: 30%;
+}
+main .calculator-section {
   max-width: 500px;
-  width: 80%;
+  width: 70%;
   border: 1px solid #272727;
 }
-main .items-container .input {
+main .calculator-section .input {
   width: 100%;
   flex: 1;
   justify-content: flex-end;
@@ -107,44 +132,58 @@ main .items-container .input {
   color: #fff;
   text-align: end;
 }
-main .items-container .input:hover {
+main .calculator-section .input:hover {
   cursor: pointer;
 }
-main .items-container ul {
+main .calculator-section ul {
   list-style: none;
   min-width: 100%;
   border: none;
   outline: none;
 }
-main .items-container li {
+main .calculator-section li {
   width: 100%;
   flex: 1;
+  background-color: aqua;
 }
-main .items-container li button:last-child {
+main .calculator-section li button:last-child {
   background-color: orange;
 }
-main .items-container li button:hover {
+main .calculator-section li button:hover {
   cursor: pointer;
   background-color: rgba(185, 185, 185, 0.658);
   transition: all 0.4s ease-in-out;
 }
-main .items-container li:last-child button:first-child {
+main .calculator-section li:last-child button:first-child {
   width: 50%;
 }
 
 @media screen and (min-width: 540px) {
+  main .calculator-section {
+    width: 50%;
+  }
   main li .btn {
     height: 70px;
   }
 
   .home-section {
-    width: 90%;
+    width: 85%;
+    max-width: 992px;
     margin: 0 auto;
+  }
+  .home-section h2 {
+    font-size: 2.4rem;
+    padding: 1rem 0;
   }
 }
 @media screen and (min-width: 768px) {
   main li .btn {
     height: 70px;
+  }
+
+  header .navbar {
+    justify-content: space-between;
+    padding: 0 10%;
   }
 
   .header-title h1 {

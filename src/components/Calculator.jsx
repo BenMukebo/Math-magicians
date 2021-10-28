@@ -23,9 +23,12 @@ const Calculator = () => {
   };
 
   return (
-    <>
-      {/* <h2>Let's do some math!</h2> */}
-      <section className="items-container">
+    <div className=" section flex-center">
+      <h2>
+        Let&apos;s do some Math
+        <span>!</span>
+      </h2>
+      <section className="calculator-section">
         <div className="flex-center result">
           <div className="input">
             {`
@@ -52,7 +55,7 @@ const Calculator = () => {
           ))}
         </ul>
       </section>
-    </>
+    </div>
   );
 };
 export default Calculator;
