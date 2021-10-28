@@ -59,8 +59,9 @@ $ cd Math-magicians
 ```
 ### Run project
 
+- After cloning the project you need to run this command
+
 ```bash
-$ npm install
 $ npm run start 
 ```
 
@@ -69,21 +70,25 @@ Your app is ready to be deployed!
 
 ### Set up React Router
 
+-To use the Router component provided to wrap your components and associate them with a path.
+
 ```bash
-$ npm install react-router-dom  # To use the Router component provided to wrap your components and associate them with a path.
+$ npm install react-router-dom 
 ```
+
+
+## Learn More
+  > `npm install`
+  > This command will download all the dependancies of the project
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
 
 ## Test
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 For tracking linter errors locally you need to follow these steps:
 
-- After cloning the project you need to run this command
 
-## Learn More
-  > `npm install`
-  > This command will download all the dependancies of the project
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 - For tracking the linter errors in HTML file run:
 
 To learn React, check out the [React documentation](https://reactjs.org/).
@@ -102,28 +107,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 - Use `npm run build` to run the app in live server
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Deployment
+
+- `npm run build` fails to minify
+### Show your support
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 ## Author
 
-
 👤 **Ben Mukebo**
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
 
 - GitHub: [@BenMukebo](https://github.com/BenMukebo)
 - Twitter [@BenMukebo](https://twitter.com/BenMukebo)
 - LinkedIn [BenMukebo](https://www.linkedin.com/in/kasongo-mukebo-ben-591720205/)
 
-### Deployment
 ## :handshake: Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 Feel free to check the [issues page](https://github.com/BenMukebo/Math-magicians/issues)
-
-### `npm run build` fails to minify
-## Show your support
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 Give a :star: if you like this project! ❤️❤️❤️
 
