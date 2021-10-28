@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => (
   <section className="home-section">
-    <h2>
+    <h2 className="second-title">
       Welcome To The Best
       <span> Calculator </span>
       In The world!
@@ -18,7 +18,7 @@ const Home = () => (
         manner.
       </p>
     </div>
-    <button type="button">Read More</button>
+    <button className="btn-more" type="button">Read More</button>
   </section>
 );
 
