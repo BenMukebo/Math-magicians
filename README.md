@@ -44,8 +44,8 @@ You will also see any lint errors in the console.
 - ![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=flat&logo=javascript)
 - ![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react)
 
-### `npm test`
-### [Demo]()
+
+### [Demo Link](https://inspiring-noyce-cafdc0.netlify.app)
 
 ## Getting Started
 
