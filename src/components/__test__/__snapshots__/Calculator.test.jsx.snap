@@ -20,10 +20,11 @@ exports[`Calculator page component renders correctly 1`] = `
     >
       <div
         className="input"
+        role="none"
       >
+        0
         
-          0
-            
+        
       </div>
     </div>
     <ul

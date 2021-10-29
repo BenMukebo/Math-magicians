@@ -30,12 +30,10 @@ const Calculator = () => {
       </h2>
       <section className="calculator-section">
         <div className="flex-center result">
-          <div className="input">
-            {`
-          ${state.total || state.operation || state.next
-              ? `${state.total || ''} ${state.operation || ''} ${state.next || ''}`
-              : '0'}
-            `}
+          <div className="input" role="none">
+            {state.total}
+            {state.operation}
+            {state.next}
           </div>
         </div>
         <ul className="items-container">
