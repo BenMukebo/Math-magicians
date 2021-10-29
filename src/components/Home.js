@@ -16,6 +16,12 @@ const Home = () => (
       <p>
         This technology allows students solve complicated problems quickly and in an efficient
         manner.
+        <span className="show">
+          Students can develop fluency and mental math skills without a calculator.
+          Visual models and number sentences help students find answers while also developing
+          number sense, mental math, and problem solving abilities. When students become reliant
+          on calculators, their fluency and number sense actually decline over time.
+        </span>
       </p>
     </div>
     <button className="btn-more" type="button">Read More</button>
