@@ -31,6 +31,8 @@
 - Use React hooks.
 - Use React Router.
 - Use styles in a React app.
+- Write unit tests with React Testing Library.
+- Write unit tests with snapshots with Jest.
 
 ### Built With
 
