@@ -19,6 +19,10 @@ section.home-section {
     }
   }
 
+  .show {
+    display: none;
+  }
+
   .btn-more {
     color: $primary-color;
     border: none;
