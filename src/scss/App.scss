@@ -34,25 +34,31 @@ main {
 
   .section {
     height: 100vh;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 3rem 1rem 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    // align-items: flex-start;
+    padding: 0 1rem;
+    text-align: center  ;
 
     h2 {
-      width: 30%;
+      // width: 30%;
+      font-size: 2rem;
+      font-family: 'Henny Penny', cursive;
+      letter-spacing: 4px;
+      margin-bottom: 1rem;
     }
   }
 
   .calculator-section {
     max-width: 500px;
-    width: 70%;
+    // width: 70%;
     border: 1px solid $text-color;
 
     .input {
       width: 100%;
       flex: 1;
       justify-content: flex-end;
-      padding: 1.2rem;
+      padding: 1rem;
       border: none;
       outline: none;
       font-size: 1.5rem;
@@ -78,6 +84,7 @@ main {
 
       button {
         @extend %btn-properties;
+        font-size: 1.2rem;
 
         &:last-child {
           background-color: $secondary-color;

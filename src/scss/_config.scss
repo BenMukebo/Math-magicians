@@ -20,14 +20,13 @@ $border: 3px solid $primary-color;
   color: $text-color;
   font-weight: bolder;
   padding: 1rem 1rem;
-  font-size: 1.4rem;
   outline: none;
   border: none;
   border: $border;
 }
 
 %parag {
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 0.3rem 0;
   line-height: 1.4;
   color: $text-color;
