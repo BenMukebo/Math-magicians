@@ -1,7 +1,6 @@
 @import 'config';
 @import 'nav';
 @import 'home';
-@import 'quote';
 
 .h2 {
   font-size: 2.2rem;
@@ -25,7 +24,7 @@ body {
 
 main {
   width: 100%;
-  height: auto;
+  height: 100vh;
   background-image: linear-gradient(to top, rgba(133, 133, 252, 0.18), rgb(125, 120, 136)), url("../img/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -36,7 +35,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     padding: 0 1rem;
-    text-align: center  ;
+    text-align: center;
 
     h2 {
       font-size: 2rem;
@@ -79,7 +78,14 @@ main {
       // flex: 1;
 
       button {
-        @extend %btn-properties;
+        width: 25%;
+        height: 60px;
+        color: $text-color;
+        font-weight: bolder;
+        padding: 1rem 1rem;
+        outline: none;
+        border: none;
+        border: $border;
         font-size: 1.2rem;
 
         &:last-child {

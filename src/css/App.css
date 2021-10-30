@@ -6,24 +6,6 @@
   font-family: "Quantico", cursive;
 }
 
-main .calculator-section .keyItem button {
-  width: 25%;
-  height: 60px;
-  color: #272727;
-  font-weight: bolder;
-  padding: 1rem 1rem;
-  outline: none;
-  border: none;
-  border: 3px solid #fff;
-}
-
-section.quote-section p, section.home-section .paragraph p {
-  font-size: 1.2rem;
-  padding: 0.3rem 0;
-  line-height: 1.4;
-  color: #272727;
-}
-
 header {
   background-color: black;
   width: 100%;
@@ -67,26 +49,47 @@ h1 span {
 .second-title {
   font-size: 2.4rem;
   line-height: 2.8rem;
+  margin-bottom: 1rem;
   color: #272727;
 }
 .second-title span {
   color: orange;
 }
 
-section.home-section {
+.quote-section {
+  height: 100vh;
+  width: 95%;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+.quote-section p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  letter-spacing: 1.8px;
+  font-family: "Henny Penny", cursive;
+}
+
+section .home-section {
   width: 100%;
   height: 100vh;
 }
-section.home-section .paragraph {
+section .home-section .paragraph {
   padding: 1rem 0;
-}
-section.home-section .paragraph p {
   font-size: 1.2rem;
 }
-section.home-section .show {
+section .home-section .paragraph p {
+  font-size: 1.2rem;
+  padding: 0.3rem 0;
+  line-height: 1.4;
+  color: #272727;
+}
+section .home-section .show {
   display: none;
 }
-section.home-section .btn-more {
+
+button.btn-more {
   color: #fff;
   border: none;
   outline: none;
@@ -98,24 +101,9 @@ section.home-section .btn-more {
   font-size: 1.2rem;
   transition: all 0.5s ease;
 }
-section.home-section .btn-more:hover {
+button.btn-more:hover {
   color: orange;
   background-color: black;
-}
-
-section.quote-section {
-  height: 100vh;
-  width: 90%;
-  max-width: 992px;
-  margin: 0 auto;
-  padding: 4rem 2rem;
-}
-section.quote-section p {
-  font-size: 1.4rem;
-  font-weight: 700;
-  line-height: 2.8rem;
-  letter-spacing: 1.8px;
-  font-family: "Henny Penny", cursive;
 }
 
 .h2 {
@@ -139,7 +127,7 @@ body {
 
 main {
   width: 100%;
-  height: auto;
+  height: 100vh;
   background-image: linear-gradient(to top, rgba(133, 133, 252, 0.18), #7d7888), url("../img/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -187,6 +175,14 @@ main .calculator-section .keyItem {
   width: 100%;
 }
 main .calculator-section .keyItem button {
+  width: 25%;
+  height: 60px;
+  color: #272727;
+  font-weight: bolder;
+  padding: 1rem 1rem;
+  outline: none;
+  border: none;
+  border: 3px solid #fff;
   font-size: 1.2rem;
 }
 main .calculator-section .keyItem button:last-child {

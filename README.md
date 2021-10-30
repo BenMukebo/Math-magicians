@@ -4,7 +4,7 @@
 # Math magicians
 
 ## Description
-- "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
+- Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
   - Make simple calculations.
   - Read a random math-related quote.
   
@@ -67,12 +67,21 @@ $ cd Math-magicians
 $ npm run start 
 ```
 
+
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-### Set up React Router
+-  Compiled SASS to CSS:
+  
+```bash
+$  sass --watch src/scss/App.scss src/css/App.css
+```
 
--To use the Router component provided to wrap your components and associate them with a path.
+To watch and output to directories by using folder paths as your input and output
+
+### Setup React Router
+
+- To use the Router component provided to wrap your components and associate them with a path.
 
 ```bash
 $ npm install react-router-dom 
@@ -80,12 +89,12 @@ $ npm install react-router-dom
 
 
 ## Learn More
-  > `npm install`
+ 
   > This command will download all the dependancies of the project
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 
-## Test
+## Run Tests
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 For tracking linter errors locally you need to follow these steps:
