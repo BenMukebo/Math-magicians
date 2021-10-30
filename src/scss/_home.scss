@@ -1,6 +1,6 @@
 .second-title {
   font-size: 2.4rem;
-  line-height: 3rem;
+  line-height: 2.8rem;
   color: $text-color;
 
   span {
@@ -17,7 +17,7 @@ section.home-section {
 
     p {
       @extend %parag;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
   }
 

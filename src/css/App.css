@@ -44,9 +44,11 @@ h1 {
   color: #fff;
   line-height: 80px;
   text-align: center;
+  font-family: "Henny Penny", cursive;
 }
 h1 span {
   color: orange;
+  font-family: "Henny Penny", cursive;
 }
 
 .nav-item {
@@ -64,7 +66,7 @@ h1 span {
 
 .second-title {
   font-size: 2.4rem;
-  line-height: 3rem;
+  line-height: 2.8rem;
   color: #272727;
 }
 .second-title span {
@@ -79,7 +81,7 @@ section.home-section .paragraph {
   padding: 1rem 0;
 }
 section.home-section .paragraph p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 section.home-section .show {
   display: none;
@@ -110,8 +112,9 @@ section.quote-section {
 }
 section.quote-section p {
   font-size: 1.4rem;
-  line-height: 3rem;
-  letter-spacing: 2px;
+  font-weight: 700;
+  line-height: 2.8rem;
+  letter-spacing: 1.8px;
   font-family: "Henny Penny", cursive;
 }
 
@@ -231,7 +234,6 @@ main .calculator-section .keyItem:last-child button:first-child {
   }
   main .home-section h2 {
     font-size: 2.4rem;
-    padding: 1rem 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -255,8 +257,8 @@ main .calculator-section .keyItem:last-child button:first-child {
   }
 
   main .home-section h2 {
-    font-size: 2.9rem;
-    line-height: 3.8rem;
+    font-size: 2.6rem;
+    line-height: 3rem;
   }
   main .keyItem .btn {
     height: 70px;

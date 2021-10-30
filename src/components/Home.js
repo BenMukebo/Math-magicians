@@ -4,7 +4,7 @@ const Home = () => (
   <section className="home-section">
     <h2 className="second-title">
       Welcome To The Best
-      <span> Calculator </span>
+      <span className="second-title"> Calculator </span>
       In The world!
     </h2>
     <div className="paragraph">
