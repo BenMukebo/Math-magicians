@@ -42,7 +42,10 @@
 
       h2 {
         font-size: 2.4rem;
-        // padding: 1rem 0;
+      }
+
+      .show {
+        display: block;
       }
     }
   }
@@ -78,6 +81,16 @@
       h2 {
         font-size: 2.6rem;
         line-height: 3rem;
+        padding: 1rem 0;
+      }
+
+      .paragraph {
+        p {
+          font-size: 1.2rem;
+          padding: 0.2rem 0;
+          line-height: 1.4;
+          color: $text-color;
+        }
       }
     }
 
@@ -94,7 +107,7 @@
     }
   }
 
-  .show {
-    display: block !important;
-  }
+  // .show {
+  //   display: block !important;
+  // }
 }
