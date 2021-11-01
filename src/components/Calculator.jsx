@@ -26,16 +26,14 @@ const Calculator = () => {
     <div className=" section flex-center">
       <h2 className="second-title">
         Let&apos;s do some Math
-        <span> !</span>
+        <span>!</span>
       </h2>
       <section className="calculator-section">
         <div className="flex-center result">
-          <div className="input">
-            {`
-          ${state.total || state.operation || state.next
-              ? `${state.total || ''} ${state.operation || ''} ${state.next || ''}`
-              : '0'}
-            `}
+          <div className="input" role="none">
+            {state.total}
+            {state.operation}
+            {state.next}
           </div>
         </div>
         <ul className="items-container">

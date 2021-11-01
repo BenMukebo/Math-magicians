@@ -4,7 +4,7 @@
 # Math magicians
 
 ## Description
-- "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
+- Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
   - Make simple calculations.
   - Read a random math-related quote.
   
@@ -31,6 +31,8 @@
 - Use React hooks.
 - Use React Router.
 - Use styles in a React app.
+- Write unit tests with React Testing Library.
+- Write unit tests with snapshots with Jest.
 
 ### Built With
 
@@ -59,31 +61,55 @@ $ cd Math-magicians
 ```
 ### Run project
 
+- After cloning the project you need to run this command
+
 ```bash
-$ npm install
 $ npm run start 
 ```
+
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-### Set up React Router
-
+-  Compiled SASS to CSS:
+  
 ```bash
-$ npm install react-router-dom  # To use the Router component provided to wrap your components and associate them with a path.
+$  sass --watch src/scss/App.scss src/css/App.css
 ```
 
-## Test
+To watch and output to directories by using folder paths as your input and output
+
+## Setup React Router
+
+- To use the Router component provided to wrap your components and associate them with a path.
+
+```bash
+$ npm install react-router-dom 
+```
+
+
+### Learn More
+ 
+  > This command will download all the dependancies of the project
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+
+## Run Tests
+
+ npm i @testing-library/jest-dom   
+ npm install --save-dev @testing-library/jest-dom
+
+```bash
+$ npm install @testing-library/react react-test-renderer jest-dom --save-dev
+```
+
+
+### Learn More
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 For tracking linter errors locally you need to follow these steps:
 
-- After cloning the project you need to run this command
 
-## Learn More
-  > `npm install`
-  > This command will download all the dependancies of the project
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 - For tracking the linter errors in HTML file run:
 
 To learn React, check out the [React documentation](https://reactjs.org/).
@@ -102,28 +128,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 - Use `npm run build` to run the app in live server
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Deployment
+
+- `npm run build` fails to minify
+### Show your support
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 ## Author
 
-
 👤 **Ben Mukebo**
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
 
 - GitHub: [@BenMukebo](https://github.com/BenMukebo)
 - Twitter [@BenMukebo](https://twitter.com/BenMukebo)
 - LinkedIn [BenMukebo](https://www.linkedin.com/in/kasongo-mukebo-ben-591720205/)
 
-### Deployment
 ## :handshake: Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 Feel free to check the [issues page](https://github.com/BenMukebo/Math-magicians/issues)
-
-### `npm run build` fails to minify
-## Show your support
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 Give a :star: if you like this project! ❤️❤️❤️
 

@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  font-family: "Quantico", cursive;
+  font-family: 'Quantico', cursive;
 }
 
 header {
@@ -28,12 +28,12 @@ h1 {
   color: #fff;
   line-height: 80px;
   text-align: center;
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
 }
 
 h1 span {
   color: orange;
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
 }
 
 .nav-item {
@@ -74,7 +74,7 @@ h1 span {
   font-weight: 700;
   line-height: 2.8rem;
   letter-spacing: 1.8px;
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
 }
 
 section .home-section {
@@ -154,7 +154,7 @@ main .section {
 
 main .section h2 {
   font-size: 2rem;
-  font-family: "Henny Penny", cursive;
+  font-family: 'Henny Penny', cursive;
   letter-spacing: 4px;
   margin-bottom: 1rem;
 }
@@ -223,41 +223,33 @@ main .calculator-section .keyItem:last-child button:first-child {
     font-size: 2.4rem;
     line-height: 80px;
   }
-
   .nav-item {
     padding: 1rem 0.5rem;
   }
-
   main .section {
     flex-direction: row;
     align-items: flex-start;
     padding-top: 2rem;
   }
-
   main .section h2 {
     width: 40%;
     padding-right: 2rem;
   }
-
   main .calculator-section {
     width: 50%;
     margin-right: 2rem;
   }
-
   main .keyItem .btn {
     height: 70px;
   }
-
   main .home-section {
     width: 85%;
     max-width: 992px;
     margin: 0 auto;
   }
-
   main .home-section h2 {
     font-size: 2.4rem;
   }
-
   main .home-section .show {
     display: block;
   }
@@ -268,42 +260,35 @@ main .calculator-section .keyItem:last-child button:first-child {
     width: 100%;
     max-width: 380px;
   }
-
   header .header-title h1 {
     font-size: 2.7rem;
   }
-
   header .navbar {
     justify-content: space-between;
     padding: 0 5%;
   }
-
   header .nav-item {
     padding-left: 1.6rem;
   }
-
   .nav-item-link {
     font-size: 1.2rem !important;
   }
-
   main .home-section h2 {
     font-size: 2.6rem;
     line-height: 3rem;
     padding: 1rem 0;
   }
-
   main .home-section .paragraph p {
     font-size: 1.2rem;
     padding: 0.2rem 0;
     line-height: 1.4;
     color: #272727;
   }
-
   main .keyItem .btn {
     height: 70px;
   }
-
   li .nav-item-link {
     font-size: 1.3rem;
   }
 }
+/*# sourceMappingURL=App.css.map */

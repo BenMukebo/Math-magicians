@@ -1,5 +1,7 @@
 .second-title {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  // margin-bottom: 1rem;
   color: $text-color;
 
   span {
@@ -7,33 +9,56 @@
   }
 }
 
-section.home-section {
+.quote-section {
+  height: 100vh;
+  width: 95%;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 1rem 0;
+
+  p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    letter-spacing: 1.8px;
+    font-family: 'Henny Penny', cursive;
+  }
+}
+
+section .home-section {
   width: 100%;
   height: 100vh;
+}
 
-  .paragraph {
-    padding: 1rem 0;
+.paragraph {
+  padding: 1rem 0;
 
-    p {
-      @extend %parag;
-    }
+  p {
+    font-size: 1.1rem;
+    padding: 0.2rem 0;
+    line-height: 1.4;
+    color: $text-color;
   }
 
-  .btn-more {
-    color: $primary-color;
-    border: none;
-    outline: none;
-    border-radius: 8px;
-    background-color: $secondary-color;
-    padding: 8px 16px;
-    float: right;
-    margin-right: 3rem;
-    font-size: 1.2rem;
-    transition: all 0.5s ease;
+  .show {
+    display: none;
+  }
+}
 
-    &:hover {
-      color: $secondary-color;
-      background-color: black;
-    }
+button.btn-more {
+  color: $primary-color;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: $secondary-color;
+  padding: 8px 16px;
+  float: right;
+  margin-right: 3rem;
+  font-size: 1.2rem;
+  transition: all 0.5s ease;
+
+  &:hover {
+    color: $secondary-color;
+    background-color: black;
   }
 }
