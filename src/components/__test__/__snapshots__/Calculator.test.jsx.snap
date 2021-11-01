@@ -9,7 +9,7 @@ exports[`Calculator page component renders correctly 1`] = `
   >
     Let's do some Math
     <span>
-       !
+      !
     </span>
   </h2>
   <section
