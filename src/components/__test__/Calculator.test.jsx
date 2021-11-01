@@ -16,7 +16,7 @@ describe('Calculator page component', () => {
     fireEvent.click(screen.getByText('x'));
     fireEvent.click(screen.getByText('7'));
     fireEvent.click(screen.getByText('='));
-    const result = screen.getByRole("none");
+    const result = screen.getByRole('none');
     expect(result.innerHTML).toBe('21');
   });
 });

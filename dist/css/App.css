@@ -6,25 +6,6 @@
   font-family: 'Quantico', cursive;
 }
 
-main .calculator-section .keyItem button {
-  width: 25%;
-  height: 60px;
-  color: #272727;
-  font-weight: bolder;
-  padding: 1rem 1rem;
-  font-size: 1.4rem;
-  outline: none;
-  border: none;
-  border: 3px solid #fff;
-}
-
-section.home-section .paragraph p, section.quote-section p {
-  font-size: 1rem;
-  padding: 0.3rem 0;
-  line-height: 1.4;
-  color: #272727;
-}
-
 header {
   background-color: black;
   width: 100%;
@@ -47,10 +28,12 @@ h1 {
   color: #fff;
   line-height: 80px;
   text-align: center;
+  font-family: 'Henny Penny', cursive;
 }
 
 h1 span {
   color: orange;
+  font-family: 'Henny Penny', cursive;
 }
 
 .nav-item {
@@ -69,7 +52,8 @@ h1 span {
 }
 
 .second-title {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
   color: #272727;
 }
 
@@ -77,20 +61,43 @@ h1 span {
   color: orange;
 }
 
-section.home-section {
+.quote-section {
+  height: 100vh;
+  width: 95%;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.quote-section p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  letter-spacing: 1.8px;
+  font-family: 'Henny Penny', cursive;
+}
+
+section .home-section {
   width: 100%;
   height: 100vh;
 }
 
-section.home-section .paragraph {
+.paragraph {
   padding: 1rem 0;
 }
 
-section.home-section .show {
+.paragraph p {
+  font-size: 1.1rem;
+  padding: 0.2rem 0;
+  line-height: 1.4;
+  color: #272727;
+}
+
+.paragraph .show {
   display: none;
 }
 
-section.home-section .btn-more {
+button.btn-more {
   color: #fff;
   border: none;
   outline: none;
@@ -103,17 +110,9 @@ section.home-section .btn-more {
   transition: all 0.5s ease;
 }
 
-section.home-section .btn-more:hover {
+button.btn-more:hover {
   color: orange;
   background-color: black;
-}
-
-section.quote-section {
-  height: 100vh;
-  width: 90%;
-  max-width: 992px;
-  margin: 0 auto;
-  padding: 4rem 2rem;
 }
 
 .h2 {
@@ -138,7 +137,7 @@ body {
 
 main {
   width: 100%;
-  height: auto;
+  height: 100vh;
   background-image: linear-gradient(to top, rgba(133, 133, 252, 0.18), #7d7888), url("../img/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -147,18 +146,21 @@ main {
 
 main .section {
   height: 100vh;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 3rem 1rem 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 1rem;
+  text-align: center;
 }
 
 main .section h2 {
-  width: 30%;
+  font-size: 2rem;
+  font-family: 'Henny Penny', cursive;
+  letter-spacing: 4px;
+  margin-bottom: 1rem;
 }
 
 main .calculator-section {
   max-width: 500px;
-  width: 70%;
   border: 1px solid #272727;
 }
 
@@ -166,7 +168,7 @@ main .calculator-section .input {
   width: 100%;
   flex: 1;
   justify-content: flex-end;
-  padding: 1.2rem;
+  padding: 1rem;
   border: none;
   outline: none;
   font-size: 1.5rem;
@@ -188,6 +190,18 @@ main .calculator-section ul {
 
 main .calculator-section .keyItem {
   width: 100%;
+}
+
+main .calculator-section .keyItem button {
+  width: 25%;
+  height: 60px;
+  color: #272727;
+  font-weight: bolder;
+  padding: 1rem 1rem;
+  outline: none;
+  border: none;
+  border: 3px solid #fff;
+  font-size: 1.2rem;
 }
 
 main .calculator-section .keyItem button:last-child {
@@ -212,8 +226,14 @@ main .calculator-section .keyItem:last-child button:first-child {
   .nav-item {
     padding: 1rem 0.5rem;
   }
+  main .section {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 2rem;
+  }
   main .section h2 {
     width: 40%;
+    padding-right: 2rem;
   }
   main .calculator-section {
     width: 50%;
@@ -229,7 +249,9 @@ main .calculator-section .keyItem:last-child button:first-child {
   }
   main .home-section h2 {
     font-size: 2.4rem;
-    padding: 1rem 0;
+  }
+  main .home-section .show {
+    display: block;
   }
 }
 
@@ -246,19 +268,27 @@ main .calculator-section .keyItem:last-child button:first-child {
     padding: 0 5%;
   }
   header .nav-item {
-    padding-left: 1.7rem;
+    padding-left: 1.6rem;
   }
   .nav-item-link {
     font-size: 1.2rem !important;
+  }
+  main .home-section h2 {
+    font-size: 2.6rem;
+    line-height: 3rem;
+    padding: 1rem 0;
+  }
+  main .home-section .paragraph p {
+    font-size: 1.2rem;
+    padding: 0.2rem 0;
+    line-height: 1.4;
+    color: #272727;
   }
   main .keyItem .btn {
     height: 70px;
   }
   li .nav-item-link {
     font-size: 1.3rem;
-  }
-  .show {
-    display: block !important;
   }
 }
 /*# sourceMappingURL=App.css.map */
