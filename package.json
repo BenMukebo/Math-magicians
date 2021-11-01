@@ -6,6 +6,7 @@
     "@testing-library/user-event": "^12.8.3",
     "big.js": "^6.1.1",
     "env": "0.0.2",
+    "netlify-cli": "^6.14.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
@@ -15,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "env PUBLIC_URL=/ react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -68,6 +69,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/BenMukebo/Math-magicians/issues"
-  },
-  "homepage": "https://github.com/BenMukebo/Math-magicians#readme"
+  }
 }
