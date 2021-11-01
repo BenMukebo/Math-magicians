@@ -79,7 +79,7 @@ $  sass --watch src/scss/App.scss src/css/App.css
 
 To watch and output to directories by using folder paths as your input and output
 
-### Setup React Router
+## Setup React Router
 
 - To use the Router component provided to wrap your components and associate them with a path.
 
@@ -88,13 +88,23 @@ $ npm install react-router-dom
 ```
 
 
-## Learn More
+### Learn More
  
   > This command will download all the dependancies of the project
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 
 ## Run Tests
+
+ npm i @testing-library/jest-dom   
+ npm install --save-dev @testing-library/jest-dom
+
+```bash
+$ npm install @testing-library/react react-test-renderer jest-dom --save-dev
+```
+
+
+### Learn More
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 For tracking linter errors locally you need to follow these steps:
